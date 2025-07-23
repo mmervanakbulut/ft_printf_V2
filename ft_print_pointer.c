@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_putptr(unsigned long n)
+static int	ft_putptr(unsigned long n)
 {
 	char	*base;
 	int		len;
