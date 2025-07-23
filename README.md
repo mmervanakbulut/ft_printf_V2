@@ -113,7 +113,7 @@ Note: It is important to not mix up the type of the arguments.
 
 - va_start take args (va_list type) and fixed parameter before the variadic.
 
-```
+```c
 int func(int count, ...)
 {
 	va_list args;
