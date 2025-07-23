@@ -7,8 +7,7 @@ RM = rm -f
 SRCS = ft_printf.c \
 	   ft_print_numbers.c \
 	   ft_print_chars.c \
-	   ft_print_pointer.c \
-	   ft_handle_format.c
+	   ft_print_pointer.c
 
 OBJS = $(SRCS:.c=.o)
 

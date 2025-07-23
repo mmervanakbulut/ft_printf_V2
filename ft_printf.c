@@ -12,6 +12,27 @@
 
 #include "ft_printf.h"
 
+static int	ft_handle_format(char format, va_list args)
+{
+	if (format == 'c')
+		return (ft_putchar(va_arg(args, int)));
+	else if (format == 's')
+		return (ft_putstr(va_arg(args, char *)));
+	else if (format == 'd' || format == 'i')
+		return (ft_putnbr(va_arg(args, int)));
+	else if (format == 'u')
+		return (ft_putunbr(va_arg(args, unsigned int)));
+	else if (format == 'x')
+		return (ft_puthex(va_arg(args, unsigned int), 0));
+	else if (format == 'X')
+		return (ft_puthex(va_arg(args, unsigned int), 1));
+	else if (format == 'p')
+		return (ft_print_pointer(va_arg(args, void *)));
+	else if (format == '%')
+		return (ft_putpercent());
+	return (0);
+}
+
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;

@@ -16,7 +16,6 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_handle_format(char format, va_list args);
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
 int	ft_putstr(char *s);

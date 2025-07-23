@@ -23,7 +23,6 @@ This project implements a custom `ft_printf` function that mimics the behavior o
 
 - [`ft_printf.c`](ft_printf.c) - Main printf function implementation
 - [`ft_printf.h`](ft_printf.h) - Header file with function declarations
-- [`ft_handle_format.c`](ft_handle_format.c) - Format specifier handler
 - [`ft_print_chars.c`](ft_print_chars.c) - Character and string printing functions
 - [`ft_print_numbers.c`](ft_print_numbers.c) - Number printing functions (decimal, unsigned, hex)
 - [`ft_print_pointer.c`](ft_print_pointer.c) - Pointer printing functions
