@@ -41,12 +41,12 @@ int	ft_putunbr(unsigned int n)
 	return (len);
 }
 
-int	ft_puthex(unsigned int n, int uppercase)
+int	ft_puthex(unsigned int n, int is_uppercase)
 {
 	char	*base;
 	int		len;
 
-	if (uppercase)
+	if (is_uppercase)
 	{
 		base = "0123456789ABCDEF";
 	}
@@ -56,7 +56,7 @@ int	ft_puthex(unsigned int n, int uppercase)
 	}
 	len = 0;
 	if (n >= 16)
-		len += ft_puthex(n / 16, uppercase);
+		len += ft_puthex(n / 16, is_uppercase);
 	len += write(1, &base[n % 16], 1);
 	return (len);
 }

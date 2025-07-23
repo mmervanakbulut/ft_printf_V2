@@ -23,7 +23,7 @@ int	ft_putstr(char *s);
 int	ft_putpercent(void);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
-int	ft_puthex(unsigned int n, int uppercase);
+int	ft_puthex(unsigned int n, int is_uppercase);
 int	ft_print_pointer(void *ptr);
 
 #endif
